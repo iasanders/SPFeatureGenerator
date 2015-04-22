@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C9CCBB7-A772-4030-A720-0649214FDA22}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CTFeatureCreator</RootNamespace>
+    <AssemblyName>CTFeatureCreator</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationSettings.cs" />
+    <Compile Include="ApplicationSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>ApplicationSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionForm.Designer.cs">
+      <DependentUpon>ConnectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentTypeForm.Designer.cs">
+      <DependentUpon>ContentTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureForm.Designer.cs">
+      <DependentUpon>FeatureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSelectionForm.Designer.cs">
+      <DependentUpon>GeneralSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListInstanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListInstanceForm.Designer.cs">
+      <DependentUpon>ListInstanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListTemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListTemplateForm.Designer.cs">
+      <DependentUpon>ListTemplateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionForm.Designer.cs">
+      <DependentUpon>SelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTDatabaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTDatabaseForm.Designer.cs">
+      <DependentUpon>CTDatabaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureCreator.Designer.cs">
+      <DependentUpon>FeatureCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTFeatureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTFeatureForm.Designer.cs">
+      <DependentUpon>CTFeatureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConnectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentTypeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ContentTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeatureForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FeatureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSelectionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GeneralSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListInstanceForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListInstanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListTemplateForm.resx">
+      <DependentUpon>ListTemplateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionForm.resx">
+      <DependentUpon>SelectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTDatabaseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CTDatabaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeatureCreator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FeatureCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTFeatureForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CTFeatureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiteColumnForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SiteColumnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidationErrorsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ValidationErrorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ApplicationSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>ApplicationSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\DataSources\Library.MFGValidationError.datasource" />
+    <None Include="Properties\DataSources\Microsoft.SharePoint.SPList.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SiteColumnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiteColumnForm.Designer.cs">
+      <DependentUpon>SiteColumnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValidationErrorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidationErrorsForm.Designer.cs">
+      <DependentUpon>ValidationErrorsForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\Library.csproj">
+      <Project>{6ADD7BDE-0D4B-4BE9-96A4-85B0A3A9F65C}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

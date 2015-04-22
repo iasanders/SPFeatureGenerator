@@ -1,0 +1,4 @@
+F:\Docs\Visual Studio 2013\Projects\CODEPLEX\MFG\MFG\Library\bin\Debug\Library.dll
+F:\Docs\Visual Studio 2013\Projects\CODEPLEX\MFG\MFG\Library\bin\Debug\Library.pdb
+F:\Docs\Visual Studio 2013\Projects\CODEPLEX\MFG\MFG\Library\obj\Debug\Library.dll
+F:\Docs\Visual Studio 2013\Projects\CODEPLEX\MFG\MFG\Library\obj\Debug\Library.pdb
